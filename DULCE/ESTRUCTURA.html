@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DULCE — Universo Canino</title>
+    <link rel="stylesheet" href="STYLE.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BOTÓN TIENDA FLOTANTE -->
+    <a class="store-float" href="#tienda" aria-label="Ir a la tienda">
+        <span class="store-glow"></span>
+        <span class="store-icon">🛍️</span>
+        <span class="store-tooltip">Tienda</span>
+    </a>
+
+    <!-- MENÚ HAMBURGUESA FLOTANTE -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+    </button>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="nav-flotante" id="navFlotante">
+        <div class="nav-header">
+            <div>
+                <small>UNIVERSO CANINO</small>
+                <h2>DULCE</h2>
+            </div>
+            <button class="close-btn" id="closeBtn" aria-label="Cerrar menú">✕</button>
+        </div>
+
+        <ul class="nav-list">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Conócela</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#timeline">Su historia</a></li>
+            <li><a href="#mundo-canino">Mundo canino</a></li>
+            <li><a href="#razas">Razas</a></li>
+            <li><a href="#encuentra">Encuentra tu perro</a></li>
+            <li><a href="#tienda">Tienda</a></li>
+        </ul>
+    </nav>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+        <div class="hero-bg">
+            <img src="PINCIPAL.jpeg" alt="Dulce, Golden Retriever">
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <span class="eyebrow">MI UNIVERSO CANINO</span>
+            <h1 class="hero-title">DULCE</h1>
+            <p class="hero-subtitle">Una historia de amor, alegría y compañía sin fin.</p>
+            <p class="hero-description">
+                Conoce a mi Golden Retriever, descubre su historia y entra a un mundo creado para quienes aman a los perros.
+            </p>
+
+            <div class="hero-cta">
+                <a href="#about" class="btn btn-primary">Conócela</a>
+                <a href="#mundo-canino" class="btn btn-secondary">Explorar mundo canino</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Descubre</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M12 5v14M19 12l-7 7-7-7"></path>
+            </svg>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- SOBRE DULCE -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">LA PROTAGONISTA</span>
+                    <h2>Conoce a Dulce</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-content">
+                        <span class="mini-label">¿QUIÉN SOY?</span>
+                        <h3>Pequeña en edad,<br>gigante de corazón.</h3>
+                        <p>
+                            Soy Dulce, una Golden Retriever de 7 meses llena de amor, energía y ganas de vivir cada momento al máximo.
+                            Llegué a esta familia para llenar el vacío que dejó mi tía Canela y, desde el primer día, me convertí en parte de sus corazones.
+                        </p>
+                        <p>
+                            Mi pasión es jugar a la pelota, acompañar a mi familia en cada aventura y repartir amor sin medida.
+                        </p>
+
+                        <div class="quick-facts">
+                            <div><strong>🎾</strong><span>Amante de la pelota</span></div>
+                            <div><strong>💛</strong><span>Muy cariñosa</span></div>
+                            <div><strong>⚡</strong><span>Energía infinita</span></div>
+                        </div>
+                    </div>
+
+                    <div class="data-card">
+                        <div class="data-card-top">
+                            <span>FICHA CANINA</span>
+                            <span>🐾</span>
+                        </div>
+                        <div class="data-item"><span>Nombre</span><strong>Dulce</strong></div>
+                        <div class="data-item"><span>Edad</span><strong>7 meses</strong></div>
+                        <div class="data-item"><span>Raza</span><strong>Golden Retriever</strong></div>
+                        <div class="data-item"><span>Nacimiento</span><strong>16 Oct 2025</strong></div>
+                        <div class="data-item"><span>Ciudad</span><strong>Bogotá, Colombia</strong></div>
+                        <div class="data-item"><span>Estado</span><strong>¡Feliz! 🐕</strong></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERSONALIDAD -->
+        <section class="section caracteristicas-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">ASÍ ES DULCE</span>
+                    <h2>Personalidad & características</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="caracteristicas-grid">
+                    <article class="caracteristica-card">
+                        <div class="caracteristica-icon">🐕</div>
+                        <h3>Físicas</h3>
+                        <ul>
+                            <li>Pelaje largo, suave y dorado</li>
+                            <li>Tamaño grande para su edad</li>
+                            <li>Ojos expresivos y brillantes</li>
+                            <li>Energía ¡infinita!</li>
+                        </ul>
+                    </article>
+
+                    <article class="caracteristica-card featured-card">
+                        <div class="caracteristica-icon">💖</div>
+                        <h3>Personalidad</h3>
+                        <ul>
+                            <li>Suave y cariñosa</li>
+                            <li>Amigable con todos</li>
+                            <li>Juguetona y aventurera</li>
+                            <li>Un poco caprichosa</li>
+                        </ul>
+                    </article>
+
+                    <article class="caracteristica-card">
+                        <div class="caracteristica-icon">🏆</div>
+                        <h3>Fortalezas</h3>
+                        <ul>
+                            <li>Repartir amor sin medida</li>
+                            <li>Traer la pelota</li>
+                            <li>Ser la mejor compañía</li>
+                            <li>Hacer feliz a todos</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA -->
+        <section class="section galeria-section" id="galeria">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">MOMENTOS</span>
+                    <h2>Galería de Dulce</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="galeria-grid">
+                    <figure class="galeria-item large">
+                        <img src="SONRIENDO.jpeg" alt="Dulce sonriendo">
+                        <figcaption><span>01</span> Mi sonrisa favorita</figcaption>
+                    </figure>
+                    <figure class="galeria-item">
+                        <img src="JUGAR.jpeg" alt="Dulce jugando">
+                        <figcaption><span>02</span> Tiempo de jugar</figcaption>
+                    </figure>
+                    <figure class="galeria-item">
+                        <img src="EN CASA.jpeg" alt="Dulce en casa">
+                        <figcaption><span>03</span> En casa</figcaption>
+                    </figure>
+                    <figure class="galeria-item">
+                        <img src="PASENANDO.jpeg" alt="Dulce viajando">
+                        <figcaption><span>04</span> Viajando feliz</figcaption>
+                    </figure>
+                    <figure class="galeria-item">
+                        <img src="FELICIDAD PURA.jpeg" alt="Dulce sonriendo">
+                        <figcaption><span>05</span> Felicidad pura</figcaption>
+                    </figure>
+                    <figure class="galeria-item">
+                        <img src="DESCANSADIO.jpeg" alt="Dulce descansando">
+                        <figcaption><span>06</span> Momento de descanso</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- HISTORIA / CAROUSEL -->
+        <section class="section timeline-section" id="timeline">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">CAPÍTULOS</span>
+                    <h2>La vida de Dulce</h2>
+                    <div class="header-line"></div>
+                    <p class="section-intro">Desliza para recorrer los momentos que han marcado su historia.</p>
+                </div>
+
+                <div class="timeline-carousel">
+                    <button class="carousel-btn prev" id="timelinePrev" aria-label="Historia anterior">‹</button>
+
+                    <div class="timeline-track" id="timelineTrack">
+                        <article class="timeline-card active">
+                            <span class="timeline-number">01</span>
+                            <span class="timeline-date">16 OCTUBRE 2025</span>
+                            <div class="timeline-icon">🐾</div>
+                            <h3>¡Nací!</h3>
+                            <p>Llegué al mundo junto con mis 7 hermanitos. El comienzo de una historia que todavía se está escribiendo.</p>
+                        </article>
+
+                        <article class="timeline-card">
+                            <span class="timeline-number">02</span>
+                            <span class="timeline-date">NOVIEMBRE 2025</span>
+                            <div class="timeline-icon">🏡</div>
+                            <h3>Mi nueva casa</h3>
+                            <p>Llegué a mi nueva familia y comencé a llenar cada espacio de juegos, pelos y mucho amor.</p>
+                        </article>
+
+                        <article class="timeline-card">
+                            <span class="timeline-number">03</span>
+                            <span class="timeline-date">DICIEMBRE 2025</span>
+                            <div class="timeline-icon">🎄</div>
+                            <h3>Primera Navidad</h3>
+                            <p>Mi primera Navidad estuvo llena de regalos, personas nuevas y muchísimo cariño.</p>
+                        </article>
+
+                        <article class="timeline-card">
+                            <span class="timeline-number">04</span>
+                            <span class="timeline-date">FEBRERO 2026</span>
+                            <div class="timeline-icon">🌳</div>
+                            <h3>Primer parque</h3>
+                            <p>Descubrí un mundo nuevo: otros perros, nuevos olores y el lugar perfecto para correr.</p>
+                        </article>
+
+                        <article class="timeline-card">
+                            <span class="timeline-number">05</span>
+                            <span class="timeline-date">AGOSTO 2026</span>
+                            <div class="timeline-icon">💻</div>
+                            <h3>Mi propia web</h3>
+                            <p>Ahora tengo un espacio digital para contar mi historia y compartir el amor por los perros.</p>
+                        </article>
+                    </div>
+
+                    <button class="carousel-btn next" id="timelineNext" aria-label="Siguiente historia">›</button>
+                </div>
+
+                <div class="carousel-dots" id="timelineDots">
+                    <button class="dot active" aria-label="Ir al capítulo 1"></button>
+                    <button class="dot" aria-label="Ir al capítulo 2"></button>
+                    <button class="dot" aria-label="Ir al capítulo 3"></button>
+                    <button class="dot" aria-label="Ir al capítulo 4"></button>
+                    <button class="dot" aria-label="Ir al capítulo 5"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- MUNDO CANINO -->
+        <section class="section mundo-section" id="mundo-canino">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">MÁS ALLÁ DE DULCE</span>
+                    <h2>Bienvenido al mundo canino</h2>
+                    <div class="header-line"></div>
+                    <p class="section-intro">Conoce algunas de las razas más populares y descubre qué las hace especiales.</p>
+                </div>
+
+                <div class="breed-grid" id="breedGrid"></div>
+                <div class="center-action">
+                    <button class="btn btn-primary" id="showMoreBreeds">Ver más razas</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- DETALLE DE RAZA -->
+        <section class="section raza-section" id="razas">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">CONOCE MEJOR</span>
+                    <h2>La raza de Dulce</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="raza-content">
+                    <div class="raza-texto">
+                        <span class="mini-label">GOLDEN RETRIEVER</span>
+                        <h3>Amistad de cuatro patas.</h3>
+                        <p>
+                            Los Golden Retrievers son conocidos por su carácter amigable, inteligencia, disposición para aprender
+                            y fuerte vínculo con las personas. Por eso suelen destacar como compañeros familiares y perros de trabajo.
+                        </p>
+                        <div class="raza-tags">
+                            <span>🐕 Familiar</span>
+                            <span>🧠 Inteligente</span>
+                            <span>🎾 Activo</span>
+                            <span>💛 Cariñoso</span>
+                        </div>
+                    </div>
+
+                    <div class="raza-stats">
+                        <div class="stat"><strong>55–61</strong><span>cm aprox. hembras</span></div>
+                        <div class="stat"><strong>25–34</strong><span>kg aprox.</span></div>
+                        <div class="stat"><strong>10–12</strong><span>años de vida</span></div>
+                        <div class="stat"><strong>∞</strong><span>amor</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUIZ -->
+        <section class="section encuentra-section" id="encuentra">
+            <div class="container">
+                <div class="quiz-box">
+                    <div class="quiz-intro">
+                        <span class="section-kicker">INTERACTÚA</span>
+                        <h2>¿Qué perro podría encajar contigo?</h2>
+                        <p>Responde tres preguntas y recibe una sugerencia de raza. Es una herramienta orientativa y no reemplaza una investigación responsable sobre cada raza.</p>
+                    </div>
+
+                    <div class="quiz-grid">
+                        <label>
+                            <span>¿Qué tamaño prefieres?</span>
+                            <select id="sizeChoice">
+                                <option value="any">Me da igual</option>
+                                <option value="small">Pequeño</option>
+                                <option value="medium">Mediano</option>
+                                <option value="large">Grande</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            <span>¿Cuánta energía buscas?</span>
+                            <select id="energyChoice">
+                                <option value="any">Me da igual</option>
+                                <option value="low">Tranquila</option>
+                                <option value="medium">Equilibrada</option>
+                                <option value="high">Alta</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            <span>¿Qué personalidad te atrae?</span>
+                            <select id="temperamentChoice">
+                                <option value="any">Me da igual</option>
+                                <option value="friendly">Amigable</option>
+                                <option value="playful">Juguetona</option>
+                                <option value="independent">Independiente</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <button class="btn btn-primary" id="findBreed">Descubrir mi coincidencia</button>
+                    <div class="quiz-result" id="quizResult" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIENDA -->
+        <section class="section tienda-section" id="tienda">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">DULCE SHOP</span>
+                    <h2>Una tienda para consentirlos</h2>
+                    <div class="header-line"></div>
+                    <p class="section-intro">Productos ficticios para convertir esta experiencia en una tienda canina completa.</p>
+                </div>
+
+                <div class="store-categories">
+                    <button class="category active" data-category="all">Todo</button>
+                    <button class="category" data-category="juguetes">Juguetes</button>
+                    <button class="category" data-category="paseo">Paseo</button>
+                    <button class="category" data-category="hogar">Hogar</button>
+                    <button class="category" data-category="cuidado">Cuidado</button>
+                </div>
+
+                <div class="product-grid" id="productGrid"></div>
+
+                <div class="cart-panel" id="cartPanel">
+                    <div>
+                        <span>🛒 Tu carrito</span>
+                        <strong id="cartCount">0 productos</strong>
+                    </div>
+                    <strong id="cartTotal">$0</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="section contacto-section" id="contacto">
+            <div class="container">
+                <div class="contacto-content">
+                    <span class="section-kicker">CERRAMOS EL RECORRIDO</span>
+                    <h2>Gracias por visitar el mundo de Dulce.</h2>
+                    <p>Este sitio nació como una forma de convertir una historia personal en una experiencia digital para todos los amantes de los perros.</p>
+                    <div class="contacto-grid">
+                        <div class="contacto-item"><span>🐾</span><strong>Dulce</strong><small>Golden Retriever</small></div>
+                        <div class="contacto-item"><span>📍</span><strong>Bogotá</strong><small>Colombia</small></div>
+                        <div class="contacto-item"><span>💛</span><strong>Hecho con amor</strong><small>2026</small></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 DULCE — Universo Canino</p>
+            <p>Una experiencia creada con 🐾 y 💖</p>
+        </div>
+    </footer>
+
+    <script src="SCRIPT.js"></script>
+</body>
+</html>
